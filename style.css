@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700|Open+Sans);
+*{
+    box-sizing: border-box;
+}
+/* BODY, CONTAINERS */
+body{
+    font-size: 16px;
+    background-color: rgb(218, 218, 218);
+    color: rgb(19, 19, 19);
+}
+.leftcol, .rightcol{
+    width: 100%;
+}
+
+.wrapper{
+    padding: 0 20px;
+}
+
+div.rightcol > h1{
+    padding-top: 0.5em;
+    clear: both;
+}
+
+/* BUTTONS */
+button{
+    margin-top: -0.4em;
+    margin-bottom: 0.8em;
+}
+
+button {
+    margin-left: 0.5em;
+    padding: 5px;
+    float: right;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+}
+
+button#add {
+    float: left;
+    margin-top: 0;
+    padding: 5px 15px;
+}
+
+button#add, button.doneBtn{
+    background-color: rgba(54, 127, 75, 0.2);
+}
+
+button#add:hover, button.doneBtn:hover{
+    background-color: rgba(54, 127, 75, 0.6);
+}
+
+button#add:active, button.doneBtn:active{
+    background-color: rgba(54, 127, 75, 0.6);
+    -moz-box-shadow:    inset 0px 0 3px 2px rgb(96, 216, 123);
+    -webkit-box-shadow: inset 0px 0 3px 2px rgb(96, 216, 123);
+    box-shadow:         inset 0px 0 3px 2px rgb(96, 216, 123);
+}
+
+button.deleteBtn{
+    background-color: rgba(198, 23, 33, 0.2);
+}
+
+button.deleteBtn:hover{
+    background-color: rgba(198, 23, 33, 0.6);
+}
+
+button.deleteBtn:active{
+    background-color: rgba(198, 23, 33, 0.6);
+    -moz-box-shadow:    inset 0px 0 3px 2px rgb(239, 131, 122);
+    -webkit-box-shadow: inset 0px 0 3px 2px rgb(239, 131, 122);
+    box-shadow:         inset 0px 0 3px 2px rgb(239, 131, 122);
+}
+
+button.editBtn, #doneEdit{
+    background-color: rgba(255,255,255, 0.4);
+}
+
+button.editBtn:hover, #doneEdit:hover {
+    background-color: rgba(255,255,255, 0.9);
+}
+
+button.editBtn:active, #doneEdit:active{
+    background-color: rgba(255,255,255, 0.9);
+    -moz-box-shadow:    inset 0px 0 3px 2px rgb(183, 183, 183);
+    -webkit-box-shadow: inset 0px 0 3px 2px rgb(183, 183, 183);
+    box-shadow:         inset 0px 0 3px 2px rgb(183, 183, 183);
+}
+
+/*LIST STYLES*/
+li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 1em;
+    padding-top: 1.4em;
+}
+
+ul {
+    padding: 0;
+}
+
+ul div{
+    overflow: hidden;
+    padding-top: 0.3em;
+}
+
+ul div:nth-child(odd){
+    background-color: rgba(183, 183, 183, 0.4);
+    border-radius: 5px;
+}
+
+/*TEXT*/
+h1 {
+    color: rgba(19,19,19, 0.8);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.8em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+/*INPUTS*/
+input[type="text"]{
+    display: block;
+    margin: 0;
+    width: 75%;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-shadow: none;
+    padding: 0.2em;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1em;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#editing{
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: -0.3em;
+    padding: 6px;
+    font-size: 14px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#input{
+    padding: 10px;
+    padding-bottom: 9px;
+    float: left;
+}
+
+@media only screen and (min-width: 768px){
+    /* BODY, CONTAINERS */
+    body{
+    background-image: url("flower.jpg");
+    background-size: cover;
+}
+    .leftcol, .rightcol {
+        min-height: 1000px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 0 20px 40px 40px;
+    }
+
+    .leftcol {
+        width: 60%;
+        float: left;
+    }
+
+    .rightcol{
+        width: 40%;
+        float: right;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1, div.rightcol>h1{
+        padding: 1em 0 0.2em 0em;
+    }
+    /* BUTTONS */
+    button{
+        float: right;
+    }
+
+    /* LISTS */
+    li{
+        float: none;
+    }
+
+    /* INPUT */
+    #input{
+        float: left;
+    }
+
+    input[type="text"]{
+        width: 80%;
+    }
+}
